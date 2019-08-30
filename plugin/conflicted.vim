@@ -15,7 +15,7 @@ function! s:Conflicted()
 endfunction
 
 function! s:Merger()
-  Gdiff
+  Gdiffsplit
   call s:MapTargetedDiffgets()
   call s:SetVersionStatuslines()
   call s:TabEdit('upstream')
